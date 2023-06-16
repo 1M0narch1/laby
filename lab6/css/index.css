@@ -1,0 +1,344 @@
+:root{
+    --index: calc(1vw+1vh)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: calc(var(--index)*6.4);
+    left: 0px;
+    top: 0px;
+}
+
+.block-header{
+    position: absolute;
+
+    width: 100%;
+    height: calc(var(--index)*6.4);
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.55);
+}
+
+@font-face {
+    font-family: 'Oxygen Mono';
+    src: local('Oxygen Mono');
+}
+
+.header{
+    display: inline-flex;
+}
+
+.nav-block{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: calc(var(--index)*3);
+}
+
+.nav-element{
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*1.8);
+    margin-left: calc(var(--index)*4.2);
+    margin-top: calc(var(--index)*2.5);
+}
+
+.logo{
+    z-index: 2;
+    position: relative;
+    width: calc(var(--index)*17);
+    height: calc(var(--index)*5.2);
+    margin-left: calc(var(--index)*2);
+}
+
+.button{
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    border-radius: 14px;
+}
+
+.button:hover{
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 14px;
+}
+
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: calc(var(--index)*5.24);
+    left: 0vw;
+    margin-top: 2px;
+    background: #252525;
+}
+
+.text-footer{
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*0.75);
+
+    color: #FFFFFF;
+}
+
+.moMayText{
+    margin-left: calc(var(--index)*0.5);
+    margin-top: calc(var(--index)*0.7);
+    line-height: calc(var(--index)*1.5);
+}
+
+.VkText{
+    margin-left: calc(var(--index)*0.5);
+    margin-top: calc(var(--index)*0.7);
+}
+
+.InstText{
+    margin-left: calc(var(--index)*0.5);
+    margin-top: calc(var(--index)*0.3);
+}
+
+.textFooter{
+    font-weight: 400;
+    font-size: calc(var(--index)*0.85);
+
+    margin-left: calc(var(--index)*24);
+    margin-top: calc(var(--index)*1.6);
+    
+    color: #FFFFFF;
+}
+
+.block{
+    display: inline-flex;
+}
+
+.supportText{
+    margin-left: calc(var(--index)*37.2);
+    margin-top: calc(var(--index)*0.5);
+}
+
+.noButton{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.conteiner{
+    margin: calc(var(--index)*5.5);
+    margin-top: calc(var(--index)*4);
+}
+
+.headBodyText{
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2.1);
+
+    color: #000000;
+}
+
+.helloText{
+    margin-left: calc(var(--index)*40.5);
+}
+
+.headBodyImg{
+    position: absolute;
+}
+
+.bg-img1{
+    width: calc(var(--index)*25);
+    height: calc(var(--index)*21);
+}
+
+.bg-img2{
+    margin-left: calc(var(--index)*55);
+    margin-top: calc(var(--index)*6);
+    width: calc(var(--index)*33);
+    height: calc(var(--index)*38);
+}
+
+.bg-img3{
+    margin-left: calc(var(--index)*15);
+    margin-top: calc(var(--index)*7);
+    width: calc(var(--index)*19);
+    height: calc(var(--index)*15);
+}
+
+.MoMayText{
+    text-align: center;
+    margin-right: calc(var(--index)*40);
+    margin-top: calc(var(--index)*23);
+}
+
+.kartRectangle{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: calc(var(--index)*26);
+    height: calc(var(--index)*16);
+
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.55);
+    border-radius: calc(var(--index)*3) calc(var(--index)*3) 0px 0px;
+}
+
+.kartText{
+    position: absolute;
+    z-index: 2;
+
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2.4);
+
+    color: #000000;
+}
+
+
+
+
+.headKartText1{
+    margin-left: calc(var(--index)*5);
+    margin-top: calc(var(--index)*0.3);
+}
+
+.bodyKartText1{
+    text-align: center;
+    font-size: calc(var(--index)*1.7);
+    margin-left: calc(var(--index)*3);
+    margin-top: calc(var(--index)*1);
+}
+
+.headKartText2{
+    margin-left: calc(var(--index)*5);
+    margin-top: calc(var(--index)*0.3);
+}
+
+.bodyKartText2{
+    text-align: center;
+    font-size: calc(var(--index)*1.7);
+    margin-right: calc(var(--index)*1);
+    margin-left: calc(var(--index)*0.3);
+    margin-top: calc(var(--index)*1);
+}
+
+.headKartText3{
+    margin-left: calc(var(--index)*5);
+    margin-top: calc(var(--index)*0.3);
+}
+
+.bodyKartText3{
+    text-align: center;
+    font-size: calc(var(--index)*1.7);
+    margin-right: calc(var(--index)*2);
+    margin-left: calc(var(--index)*1);
+    margin-top: calc(var(--index)*1);
+}
+
+.kart1{
+    margin-top: calc(var(--index)*1);
+    margin-left: calc(var(--index)*1);
+}
+
+.kart2{
+    margin-top: calc(var(--index)*1);
+    margin-left: calc(var(--index)*31.8);
+}
+
+.kart3{
+    margin-top: calc(var(--index)*1);
+    margin-left: calc(var(--index)*62);
+}
+
+
+.moreContent{
+    margin-top: calc(var(--index)*22);
+}
+
+.rectangle{
+    box-sizing: border-box;
+
+    width: calc(var(--index)*80);
+    height: calc(var(--index)*22);
+    margin-right: calc(var(--index)*2);
+    margin-left: calc(var(--index)*5);
+    margin-top: calc(var(--index)*2);
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.55);
+    border-radius: calc(var(--index)*1) calc(var(--index)*1) calc(var(--index)*1) calc(var(--index)*1);
+}
+
+.titleText{
+
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2.2);
+
+    color: #000000;
+
+    margin-left: calc(var(--index)*31);
+    margin-bottom: calc(var(--index)*1);
+}
+
+.img-block1{
+    width: calc(var(--index)*16);
+    height: calc(var(--index)*18);
+    margin-top: calc(var(--index)*2);
+    margin-left: calc(var(--index)*5);
+}
+
+.block-goods{
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*1.4);
+
+    color: #000000;
+
+    display: inline-flex;
+
+}
+
+.text-blockInBlock{
+    margin-top: calc(var(--index)*2);
+    margin-left: calc(var(--index)*4);
+    line-height: calc(var(--index)*2.5);
+}
+
+.nomber-text{
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2);
+
+    color: #000000;
+
+    margin-top: calc(var(--index)*18);
+    margin-left: calc(var(--index)*33);
+}
+
+.titleText2{
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2.2);
+
+    color: #000000;
+
+    margin-left: calc(var(--index)*38);
+    margin-top: calc(var(--index)*6);
+}

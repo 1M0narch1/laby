@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" >
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="ibtn">
+        <div class="inp1">
+            <div class="txt">Фамилия</div>
+            <input class="sizel" type="text">
+        </div>
+        <br>
+        <div class="inp2">
+            <div class="txt">Инициалы</div>
+            <input class="sizel" type="text">
+        </div>
+        <br>
+
+        <div class="inp3">
+            <div class="txt">Пароль</div>
+            <input class="sizel" type="password">
+        </div>
+        <br>
+
+        <div class="inp4">
+            <div class="txt">Адрес получателя</div>
+            <input class="sizeXl" type="text">
+        </div>
+        <br>
+
+        <div class="inp5">
+            <div class="txt">Количество</div>
+            <input class="sizeS" type="number">
+        </div>
+        <br>
+
+        <div class="inp6">
+            <div class="txt">Тип</div>
+            <Select size="1">
+                <option value="1">Куриные</option>
+                <option value="2">Свинные</option>
+            </Select>
+            <Select size="1">
+                <option value="1">Отборные</option>
+                <option value="2">Краденые</option>
+            </Select>
+        </div>
+        <br>
+
+        <div class="inp7">
+            <div class="txt">Доставка</div>
+            <div class="dt">
+            <p><input name="dzen" type="radio" value="nedzen">Почтой</p>
+            <p><input name="dzen" type="radio" value="dzen"> Электронно</p>
+            <p><input name="dzen" type="radio" value="pdzen" checked>Курьером</p>
+        </div>
+        </div>
+        <br>
+
+        <div class="inp8">
+            <div class="txt">Требуется накладная</div>
+            <input class="sizeS" type="checkbox">
+        </div>
+        <br>
+        <div class="inp9">
+            <div class="txt">Дополнительная информация</div>
+            <textarea name="Дополнительная информация" cols="30" rows="5"></textarea>
+        </div>
+        <br>
+
+        <div class="btn">
+            <input class="ibtn"  type=submit name=button value="Отправить"> 
+            <input class="btn1 ibtn" type=reset name=button value="Отмена"> 
+        </div>
+    </form>
+    
+
+</body>
+</html>

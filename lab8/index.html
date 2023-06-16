@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let a = prompt('Введите ваше имя');
+        let b = prompt('Введите ваше Фамилию');
+        let c = prompt('Введите ваше отчество');
+
+        a = a.substring(0, 1);
+        c = c.substring(0, 1);
+        a.toUpperCase;
+        c.toUpperCase;
+
+        alert(b + " " + a + "." + c + ".")
+    </script>
+</head>
+
+<body>
+
+    <button onclick="for(let i=0;i<3;i++){ document.querySelector('div').remove()}">Оставить</button>
+
+    <p>P</p>
+    <div>div</div>
+    <p>P</p>
+    <div>div</div>
+    <p>P</p>
+    <div>div</div>
+
+    <a id="im-gh" href="#"><img src="123.jpg" alt=""></a>
+
+    <form id="FEEL">
+        <p>Имя</p>
+        <input type="text" name="ИМЯ">
+        <p>Фамилия</p>
+        <input type="text" name="Фамилия">
+        <p>отчество</p>
+        <input type="text" name="отчество">
+        <input type="submit">
+        <p id="rrr" name="tee"></p>
+    </form>
+
+
+    <script>
+        const f1 = document.getElementById('FEEL')
+
+        f1.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const f1Date = new FormData(f1);
+
+            let a = f1Date.get('ИМЯ');
+            let b = f1Date.get('Фамилия');
+            let c = f1Date.get('отчество');
+
+            a = a.substring(0, 1);
+            c = c.substring(0, 1);
+            a.toUpperCase;
+            c.toUpperCase;
+
+            let r = document.getElementById('rrr');
+            r.textContent = b + " " + a + "." + c + ".";
+        })
+
+
+
+
+
+        hp = document.getElementById('im-gh');
+        hp.addEventListener("mouseover", function() {
+            this.children[0].src = "122.jpg";
+        });
+        hp.addEventListener("click", function(event) {
+            event.preventDefault();
+            this.children[0].src = "123.jpg";
+        });
+    </script>
+
+</body>
+
+</html>

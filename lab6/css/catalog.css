@@ -1,0 +1,56 @@
+footer{
+    position: absolute;
+    width: 100%;
+    height: calc(var(--index)*5.24);
+    left: 0vw;
+    margin-top: calc(var(--index)*5);
+    background: #252525;
+}
+
+.catalogHeader{
+    color: black;
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2.5);
+
+    margin-left: calc(var(--index)*36);
+}
+
+.textYkor{
+    margin-top: calc(var(--index)*4);
+    text-decoration: none;
+    color: black;
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2);
+}
+
+.titleText1{
+
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2.2);
+
+    color: #000000;
+
+    margin-top: calc(var(--index)*30);
+    margin-left: calc(var(--index)*38);
+    margin-bottom: calc(var(--index)*2.2);
+}
+
+
+.titleText2{
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--index)*2.2);
+
+    color: #000000;
+
+    margin-top: calc(var(--index)*-15);
+    margin-left: calc(var(--index)*40);
+    margin-bottom: calc(var(--index)*2.2);
+}
