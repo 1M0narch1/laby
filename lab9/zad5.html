@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-latest.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#but1").click(function () {
+                $("tr:odd").hide();
+            });
+            
+            $("#but2").click(function () {
+                $("tr:odd").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="but1">Hide</button>
+    <button id="but2">Show</button>
+    <br>
+    <table>
+        <tr><td>frst row</td></tr>
+        <tr><td>scnd row</td></tr>
+        <tr><td>thrd row</td></tr>
+        <tr><td>fourth row</td></tr>
+    </table>
+</body>
+
+</html>

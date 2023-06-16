@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Две картинки и две кнопки</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <img id="img1" src="alexandra-daddario.jpg" style="display:none">
+        <img id="img2" src="c01603ef25c1fc562d080f41f28bb1b7.jpeg" style="display:none">
+        <div id="buttons">
+            <button id="btn1" type="button">Кнопка 1</button>
+            <button id="btn2" type="button">Кнопка 2</button>
+        </div>
+        <script>
+            var timer;
+            jQuery(document).ready(function () {
+ 
+                // КНОПКА 1
+                $( "#btn1" ).click(function() {
+                    timer = setTimeout(function() {
+                        // Появление 1-й (2 сек.)
+                        $( "#img1" ).slideDown(2000);
+                        // Исчезновение 2-й (2 сек. + 1 сек. паузы)
+                        $( "#img2" ).slideUp(2000).delay(1000);
+                        // Появление 2-й (2 сек.)
+                        $( "#img2" ).slideDown(2000);
+                        // Исчезновение 1-й
+                        $( "#img1" ).slideUp(2000);
+                        $( "#btn1" ).click();
+                    }, 100);
+                });
+ 
+                // КНОПКА 2
+                $( "#btn2" ).click(function() {
+                    clearTimeout(timer);
+                    // Появление 1-й
+                    $( "#img1" ).show();
+                    // Появление 2-й
+                    $( "#img2" ).show();
+                });
+});
+        </script>
+    </body>
+</html>
